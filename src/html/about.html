@@ -4,76 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
-  
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
 </head>
 <body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="cv.html">CV</a>
-      <a href="project.html">Project</a>
-      <a href="skill.html">Skill</a>
+  <!-- Header section of the webpage containing the title and navigation -->
+
+  <header class="header">
+    <h1 class="about">ABOUT<samp>_</samp>ME</h1>
+    <nav id="nav" class="nav-hidden">
+      <ul class="sidebar">
+        <li><a href="/index.html" class="header">Home</a></li>
+        <li><a href="./about.html" class="header-active">About Me</a></li>
+        <li><a href="./cv.html" class="header">CV</a></li>
+        <li><a href="./project.html" class="header">Project</a></li>
+        <li><a href="./skill.html" class="header">Skill</a></li>
+      </ul>
+
+      <ul>
+        <li class="hideOnMobile"><a href="/index.html" class="header">Home</a></li>
+        <li class="hideOnMobile"><a href="./about.html" class="header-active">About Me</a></li>
+        <li class="hideOnMobile"><a href="./cv.html" class="header">CV</a></li>
+        <li class="hideOnMobile"><a href="./project.html" class="header">Project</a></li>
+        <li class="hideOnMobile"><a href="./skill.html" class="header">Skill</a></li>
+        <li class="burger" onclick="showSidebar()"> &#9776;</li>
+      </ul>
+            
     </nav>
   </header>
-  <h2>my hobbies</h2>
-  <div>
-    <img src="images/book.jpg" alt="Book picture">
-    <p>
-    One of my hobbies is reading.
-     I thoroughly enjoy exploring books that delve 
-     into psychology and those with mind-bending plots.
-    </p>
-  </div>
-  <div>
-    <img src="images/java-hobbie.jpg" alt="java code">
-    <p>
-      My second hobby is coding. 
-      I take great pleasure in programming, 
-      particularly with Java.
-    </p>
-  </div>
-  <section>
-    <h2>Tech Enthusiast</h2>
-    <p>I have a deep interest in software engineering,
-      where I strive to create innovative solutions to complex problems.
-      I primarily work with Java, but I'm also 
-      exploring modern web frameworks and cloud
-       technologies to broaden my skill set.
-      <br>specific areas within software engineering that i am passionate about, includes:</p>
 
-    <button>&lt;</button>
-    <div>
-      <img src="images/mobile-app.jpg" alt="Mobile app development">
-      <p>Mobile app development</p>
-    </div>
-    <div>
-      <img src="images/web-dev.jpg" alt="Web development">
-      <p>Web development</p>
-    </div>
-    <div>
-      <img src="images/cloud-computing.jpg" alt="Cloud computing">
-      <p>Cloud computing</p>
-    </div>
-    <div>
-      <img src="images/system-arch.jpg" alt="Systems architecture">
-      <p>Systems architecture</p>
-    </div>
-    <div>
-      <img src="images/DevOps.jpg" alt="DevOps practices">
-      <p>DevOps practices</p>
-    </div>
-    <div>
-      <img src="images/AI.jpg" alt="Machine learning and AI">
-      <p>Machine learning and AI</p>
-    </div>
-    <button>&gt;</button>
+  <div class="middle">
 
-  </section>
+    <div>
+      <div class="right-rectangle"></div>
+      
+      <h2>MY HOBBIES</h2>
+      <div class="hobbies">
+        <div>
+          <img src="../images/book.jpg" alt="Book picture">
+          <p>
+            One of my hobbies is reading.
+            I thoroughly enjoy exploring books that delve
+            into psychology and those with mind-bending plots.
+          </p>
+        </div>
+        <div>
+          <img src="../images/java-hobbie.jpg" alt="java code">
+          <p>
+            My second hobby is coding.
+            I take great pleasure in programming,
+            particularly with Java.
+          </p>
+        </div>
+      </div>
+   </div>
+
+    <section>
+      <h2>TECH ENTHUSIAST</h2>
+      <p class="tech">I have a deep interest in software engineering,
+        where I strive to create innovative solutions to complex problems.
+        I primarily work with Java, but I'm also
+        exploring modern web frameworks and cloud
+        technologies to broaden my skill set.
+        <br>Specific areas within software engineering that I am passionate about include:
+      </p>
+      <div class="tech">
+        <button id="prev" onclick="PerviousButton()">&lt;</button>
+        <div class="image-group">
+            <div class="image-item pervious">
+                <img src="../images/mobile-app.jpg" alt="Mobile app development">
+                <p>Mobile app development</p>
+            </div>
+            <div class="image-item pervious">
+                <img src="../images/web-dev.jpg" alt="Web development">
+                <p>Web development</p>
+            </div>
+            <div class="image-item next">
+                <img src="../images/cloud-computing.jpg" alt="Cloud computing">
+                <p>Cloud computing</p>
+            </div>
+            <div class="image-item next">
+                <img src="../images/system-arch.jpg" alt="Systems architecture">
+                <p>Systems architecture</p>
+            </div>
+            <div class="image-item next">
+                <img src="../images/DevOps.jpg" alt="DevOps practices">
+                <p>DevOps practices</p>
+            </div>
+            <div class="image-item next">
+                <img src="../images/AI.jpg" alt="Machine learning and AI">
+                <p>Machine learning and AI</p>
+            </div>   
+        </div>
+        <button id="next" onclick="NextButton()">&gt;</button>
+        
+     </div>
+    </section>
+    <div class="left-rectangle"></div>
+  </div>
 
   <footer>
     <p>&copy; 2024 Hawi Mekonnen. All rights reserved.</p>
   </footer>
+  <script src="../js/about.js"></script>
+  <script src="../js/burger.js"></script>
 </body>
 </html>
