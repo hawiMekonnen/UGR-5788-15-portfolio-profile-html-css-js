@@ -3,47 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <title>Home Page</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/header-footer.css">
 </head>
 <body>
-  <header>
-    <h1>Home</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="cv.html">CV</a>
-      <a href="project.html">Project</a>
-      <a href="skill.html">Skill</a>
+  <header class="header">
+    <h1 class="home">HOME</h1>
+    <nav id="nav" class="nav-hidden">
+      <ul class="sidebar">
+        <li><a href="index.html" class="header-active">Home</a></li>
+        <li><a href="src/html/about.html" class="header">About Me</a></li>
+        <li><a href="src/html/cv.html" class="header">CV</a></li>
+        <li><a href="src/html/project.html" class="header">Project</a></li>
+        <li><a href="src/html/skill.html" class="header">Skill</a></li>
+      </ul>
+
+      <ul>
+        <li class="hideOnMobile"><a href="index.html" class="header-active">Home</a></li>
+        <li class="hideOnMobile"><a href="src/html/about.html" class="header">About Me</a></li>
+        <li class="hideOnMobile"><a href="src/html/cv.html" class="header">CV</a></li>
+        <li class="hideOnMobile"><a href="src/html/project.html" class="header">Project</a></li>
+        <li class="hideOnMobile"><a href="src/html/skill.html" class="header">Skill</a></li>
+        <li class="burger" onclick="showSidebar()"> &#9776;</li>
+      </ul>
+            
     </nav>
   </header>
-  <article>
-    <h2>Welcome to My Portfolio</h2>
-    <p>
-      Hello! My name is Hawi Mekonnen, and I am a third-year Software Engineering student at
-      Addis Ababa University. This portfolio website serves as a platform for me to showcase
-      my skills,projects, and educational background. Here, you'll find information about my 
-      technical expertise, the projects I've completed, and my journey in the field of software development.
-      <br>If you'd like to connect, collaborate, or share insights, please feel free to reach out!
-       You can find my contact information, including my Instagram, Telegram, and email address, below the image.
-    </p>
-  </article>
-  <aside>
-    <img src="images/home-page.jpg" alt="image">
-    <a href="" target="_blank">
-      <i class="fab fa-instagram"></i>
-  </a>
-  <a href="" target="_blank">
-      <i class="fab fa-telegram-plane"></i>
-  </a>
-  <a href="mailto:">
-      <i class="fas fa-envelope"></i>
-  </a>
-  </aside>
-  
+
+  <div class="article-image">
+     <article>
+        <h2 class="text-welcome">WELCOME TO MY PORTFOLIO</h2>
+        <p class="article">
+        Hello! My name is Hawi Mekonnen, and I am a third-year Software Engineering student at Addis Ababa University.This portfolio website serves as a platform for me to showcase my skills, projects, and educational background. Here, you'll find information about my  technical expertise, the projects I've completed, and my journey in the field of software development. <br>If you'd like to connect, collaborate, or share insights, please feel free to reach out! You can find my contact information, including my Instagram, Telegram, and email address, below the image.
+        </p>
+      </article>
+      <aside>
+        <div class="bordered-image">
+          <img src="src/images/home-page.jpg" alt="image"><a href="https://www.instagram.com/"></a>
+        </div>
+        <div class="logo-container">
+          <div class="logo-instagram">
+            <a href="https://www.instagram.com/">
+              <img src="src/images/instagram-icon.jpg" alt="instagram-icon">
+            </a>
+          </div>
+
+          <div class="logo-telegram">
+            <a href="https://web.telegram.org/">
+              <img src="src/images/telegram-icon.jpg" alt="telegram-icon">
+            </a>
+          </div>
+
+          <div class="logo-email">
+            <a href="https://mail.google.com/">
+              <img src="src/images/email-icon.jpg" alt="email-icon">
+            </a>
+          </div>
+          
+        </div>
+      </aside>
+  </div>
+
   <footer>
     <p>&copy; 2024 Hawi Mekonnen. All rights reserved.</p>
   </footer>
+  <script src="js/burger.js"></script>
 </body>
 </html>
