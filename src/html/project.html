@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project page</title>
+    <title>Project</title>
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
     
 </head>
 <body>
-  <header>
-    <h1>projects</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="cv.html">CV</a>
-      <a href="project.html">Project</a>
-      <a href="skill.html">Skill</a>
+  <header class="header">
+    <h1 class="project">PROJECT</h1>
+    <nav id="nav" class="nav-hidden">
+      <ul class="sidebar">
+        <li><a href="/index.html" class="header">Home</a></li>
+        <li><a href="./about.html" class="header">About Me</a></li>
+        <li><a href="./cv.html" class="header">CV</a></li>
+        <li><a href="./project.html" class="header-active">Project</a></li>
+        <li><a href="./skill.html" class="header">Skill</a></li>
+      </ul>
+
+      <ul>
+        <li class="hideOnMobile"><a href="/index.html" class="header">Home</a></li>
+        <li class="hideOnMobile"><a href="./about.html" class="header">About Me</a></li>
+        <li class="hideOnMobile"><a href="./cv.html" class="header">CV</a></li>
+        <li class="hideOnMobile"><a href="./project.html" class="header-active">Project</a></li>
+        <li class="hideOnMobile"><a href="./skill.html" class="header">Skill</a></li>
+        <li class="burger" onclick="showSidebar()"> &#9776;</li>
+      </ul>
+            
     </nav>
   </header>
-  <h2>My Recent Works </h2>
-  <article>
-    <h2>Budget Tracker</h2>
-    <p>
-      Created a budget tracking system that allows
-      users to monitor their spending and savings. The 
-      app includes features for goal setting,expense tracking,
-      and visualizing financial progress with charts.
-    </p>
-  </article>
-  <div>
-      <img src="images/code-1.jpg" alt="">
-      <img src="images/code-2.jpg" alt="">
-      <img src="images/code-3.jpg" alt="">
-      <img src="images/code-4.jpg" alt="">
-    <p>
-      The Budget Tracker is a personal finance system 
-      designed to help users manage their spending and
-      savings.Built with Java, it allows users to set budgets 
-      and categorize expenses. This project improved my coding
-      skills and deepened my understanding of financial management.
-    </p>
+
+  <div class="middle">
+    <div class="colored-background"></div>
+
+    <h2>MY RECENT WORKS</h2>
+    <article>
+      <h3>BUDGET TRACKER</h3>
+      <p>
+        Created a budget tracking system that allows users to monitor their spending and savings. The 
+        app includes features for goal setting, expense tracking, and visualizing financial progress with charts.
+      </p>
+    </article>
+    <div class="project-img">
+      <img src="../images/code-1.jpg" alt="">
+      <img src="../images/code-2.jpg" alt="">
+      <img src="../images/code-3.jpg" alt="">
+      <img src="../images/code-4.jpg" alt="">
+    </div>
+    
   </div>
 
   <footer>
     <p>&copy; 2024 Hawi Mekonnen. All rights reserved.</p>
   </footer>
+  <script src="../js/burger.js"></script>
 </body>
 </html>

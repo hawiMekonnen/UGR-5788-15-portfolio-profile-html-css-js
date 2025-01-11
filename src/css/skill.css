@@ -1,0 +1,435 @@
+@media (min-width: 1025px){
+    body, * {
+      padding: 0;
+      margin: 0;
+      
+    }
+    
+    body {
+      min-height: 100vh;
+      background-color: white; 
+    }
+  
+    .skill {
+      width: 100%;
+      height: 85%;
+      font-size: 40px;
+      padding: .5em;
+      color: white;
+      background-color: #2C4065;
+      border-bottom-right-radius: 70px;
+    }
+    
+    .colored-section {
+      position: absolute; 
+      top: 180px;
+      left: 0;
+      width: 80%; 
+      height: 510px; 
+      background-color: #2C4065; 
+      z-index: -1; 
+    }
+    
+    p {
+      font-size: 10px;
+    }
+    
+    h2 {
+      margin-top: 3em;
+      font-size: 32px;
+      text-align: center;
+      color: white;
+    }
+    
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      margin-top: 1em;
+    }
+    strong{
+      font-size: 16px;
+     line-height: 1.5em;
+    }
+    
+    .my-skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+    .img-info{
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.5em;
+      color: white;
+    }
+    
+    .skill-info {
+      margin-left: 15px;
+      margin-top: .8em; 
+    }
+    
+    .progress {
+      background-color: white; 
+      overflow: hidden; 
+      height: 23px; 
+      width: 348px; 
+      position: relative; 
+    }
+    
+    .progress-bar {
+      background-color: #2C4065; 
+      height: 70%; 
+      margin-top: 3px;
+      transition: width 0.4s ease; 
+    }
+  }
+  @media screen and (max-width: 480px){
+    body, * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    body {
+      min-height: 100vh;
+      background-color: white; 
+    }
+  
+    
+    .skill {
+      font-size: 40px;
+      margin-left:27vw;
+      margin-bottom: 15px;
+      color: white;
+    }
+    
+    .colored-section {
+      position: absolute; 
+      top: 135px;
+      left: 0;
+      width: 88%; 
+      height: 75%; 
+      background-color: #2C4065; 
+      z-index: -1; 
+    }
+    
+    .middle p {
+      font-size: 10px;
+    }
+   
+    h2 {
+      margin-top: 5em;
+      font-size: 20px;
+      text-align: center;
+      color: white;
+    }
+    
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      margin-top: 1em;
+      margin-left: 4%;
+    }
+    strong{
+      font-size: 16px;
+     line-height: 1.5em;
+    }
+    
+    .my-skills {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+     
+    }
+    .img-info{
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.5em;
+      color: white;
+    }
+    
+    .skill-info {
+      margin-left: 15px;
+      margin-top: .8em; 
+    }
+    
+    .progress {
+      background-color: white; 
+      overflow: hidden; 
+      height: 17px; 
+      width: 100%; 
+      position: relative; 
+    }
+    
+    .progress-bar {
+      background-color: #2C4065; 
+      height: 65%; 
+      margin-top: 2.3px;
+      transition: width 0.4s ease; 
+    }
+  
+  }
+  @media screen and (min-width:481px) and (max-width: 932px) and (orientation:  Landscape){
+    
+    body, * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    body {
+      background-color: white; 
+    }
+    
+    .skill {
+      width: 100%;
+      height: 90%;
+      font-size: 36px;
+      padding: .2em .9em;
+      color: white;
+      background-color: #2C4065;
+      border-bottom-right-radius: 40px ;
+    }
+    
+    .colored-section {
+      position: absolute; 
+      top: 95px;
+      left: 0;
+      width: 85%; 
+      height: 255px; 
+      background-color: #2C4065; 
+      z-index: -1; 
+    }
+    
+    p {
+      font-size: 10px;
+      width: 95%;
+    }
+    
+    
+    h2 {
+      margin-top: 2em;
+      font-size: 20px;
+      text-align: center;
+      color: white;
+    }
+    
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 35px;
+      margin-top: 1em;
+    }
+    strong{
+      font-size: 16px;
+     line-height: 1.5em;
+    }
+    
+    .my-skills {
+      display: grid;
+      grid-template-columns: 40% 40% ;
+      margin-left: 4%;
+    }
+    .img-info{
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.5em;
+      color: white;
+    }
+    
+    .skill-info {
+      margin-left: 15px;
+      margin-top: .8em; 
+    }
+    
+    .progress {
+      background-color: white; 
+      overflow: hidden; 
+      height: 14px; 
+      width: 75%; 
+      position: relative; 
+    }
+    
+    .progress-bar {
+      background-color: #2C4065; 
+      height: 70%; 
+      margin-top: 2px;
+      transition: width 0.4s ease; 
+    }
+  
+  }
+  @media screen and (min-width: 481px) and (max-width: 1024px) and (orientation:  portrait){
+    
+    body, * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    body {
+      min-height: 100vh;
+      background-color: white; 
+    }
+  
+    .skill {
+      width: 100%;
+      height: 85%;
+      font-size: 40px;
+      padding: .3em 1.8em .3em .4em;
+      color: white;
+      background-color: #2C4065;
+      border-bottom-right-radius: 40px ;
+    }
+    
+    .colored-section {
+      position: absolute; 
+      top: 130px;
+      left: 0;
+      width: 90%; 
+      height: 540px; 
+      background-color: #2C4065; 
+      z-index: -1; 
+    }
+    
+    p {
+      font-size: 11px;
+      width: 90%;
+    }
+    
+    h2 {
+      margin-top: 2em;
+      font-size: 36px;
+      margin-left: 30%;
+      color: white;
+    }
+    
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      margin-top: 1em;
+    }
+    strong{
+      font-size: 16px;
+     line-height: 1.5em;
+    }
+    
+    .my-skills {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8%;
+    }
+    .img-info{
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.5em;
+      color: white;
+    }
+    
+    .skill-info {
+      margin-left: 15px;
+      margin-top: .8em; 
+    }
+    
+    .progress {
+      background-color: white; 
+      overflow: hidden; 
+      height: 23px; 
+      width: 280px; 
+      position: relative; 
+    }
+    
+    .progress-bar {
+      background-color: #2C4065; 
+      height: 70%; 
+      margin-top: 3px;
+      transition: width 0.4s ease; 
+    }
+  
+  }
+  @media screen and (min-width: 769px)  and (max-width: 1024px) and (orientation:  Landscape){
+    
+    body, * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    body {
+      min-height: 100vh;
+      background-color: white; 
+    }
+  
+    .skill {
+      width: 100%;
+      height: 85%;
+      font-size: 40px;
+      padding: .5em .6em .4em .4em;
+      color: white;
+      background-color: #2C4065;
+      border-bottom-right-radius: 70px ;
+    }
+    
+    .colored-section {
+      position: absolute; 
+      top: 135px;
+      left: 0;
+      width:85%; 
+      height: 527px; 
+      background-color: #2C4065; 
+      z-index: -1; 
+    }
+    
+    p {
+      font-size: 11px;
+    }
+   
+    h2 {
+      margin-top: 2em;
+      font-size: 32px;
+      text-align: center;
+      color: white;
+    }
+    
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      margin-top: 1em;
+    }
+    strong{
+      font-size: 16px;
+     line-height: 1.5em;
+    }
+    
+    .my-skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+    .img-info{
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.5em;
+      color: white;
+    }
+    
+    .skill-info {
+      margin-left: 15px;
+      margin-top: .8em; 
+    }
+    
+    .progress {
+      background-color: white; 
+      overflow: hidden; 
+      height: 23px; 
+      width: 348px; 
+      position: relative; 
+    }
+    
+    .progress-bar {
+      background-color: #2C4065; 
+      height: 70%; 
+      margin-top: 3px;
+      transition: width 0.4s ease; 
+    }
+  
+  }

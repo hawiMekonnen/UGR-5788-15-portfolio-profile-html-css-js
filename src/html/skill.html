@@ -3,48 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill page</title>
-    
+    <title>Skill</title>
+    <link rel="stylesheet" href="../css/skill.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
 </head>
 <body>
-  <header>
-    <h1>Skills</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="cv.html">CV</a>
-      <a href="project.html">Project</a>
-      <a href="skill.html">Skill</a>
+  <header class="header">
+    <h1 class="skill">SKILL</h1>
+    <nav id="nav" class="nav-hidden">
+      <ul class="sidebar">
+        <li><a href="/index.html" class="header">Home</a></li>
+        <li><a href="./about.html" class="header">About Me</a></li>
+        <li><a href="./cv.html" class="header">CV</a></li>
+        <li><a href="./project.html" class="header">Project</a></li>
+        <li><a href="./skill.html" class="header-active">Skill</a></li>
+      </ul>
+
+      <ul>
+        <li class="hideOnMobile"><a href="/index.html" class="header">Home</a></li>
+        <li class="hideOnMobile"><a href="./about.html" class="header">About Me</a></li>
+        <li class="hideOnMobile"><a href="./cv.html" class="header">CV</a></li>
+        <li class="hideOnMobile"><a href="./project.html" class="header">Project</a></li>
+        <li class="hideOnMobile"><a href="./skill.html" class="header-active">Skill</a></li>
+        <li class="burger" onclick="showSidebar()"> &#9776;</li>
+      </ul>
+            
     </nav>
   </header>
-  <h2>MY Skills</h2>
-  <div>
-    <img src="images/HTML.jpg" alt="HTML logo">
-    <p>HTML: <strong>88%</strong> <br>Proficient in creating structured web pages using HTML5.
-      <br>Experience: 6 month.</p>
-  </div>
 
-  <div>
-    <img src="images/CSS.jpg" alt="CSS logo">
-    <p>CSS: <strong>80%</strong> <br> Skilled in styling and layout techniques using CSS3. 
-      <br>Experience: 6 month.</p>
-  </div>
+  <div class="middle">
+    <div class="colored-section"></div> 
+    <h2>MY SKILLS</h2>
+    <div class="my-skills">
+      <div class="img-info">
+          <img src="../images/HTML.jpg" alt="HTML logo">
+          <div class="skill-info">
+            <div class="progress">
+              <div class="progress-bar" style="width: 88%;"></div>
+            </div>
+            <p> <strong> HTML: 88%</strong></p>
+            <p>Proficient in creating structured web pages using HTML5.<br>Experience: 6 months.</p>
+          </div>
+      </div>
 
-  <div>
-    <img src="images/java-script.jpg" alt="JavaScript logo">
-    <p>JavaScript: <strong>70%</strong> <br>Familiar with modern JavaScript features and frameworks. 
-     <br> Experience: 6 month.</p>
-  </div>
+      <div class="img-info">
+          <img src="../images/CSS.jpg" alt="CSS logo">
+          <div class="skill-info">
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <p> <strong> CSS: 80%</strong></p>
+            <p>Skilled in styling and layout techniques using CSS3.<br>Experience: 6 months.</p>
+          </div>
+      </div>
 
-  <div>
-    <img src="images/java.jpg" alt="java logo">
-    <p>java: <strong>75%</strong> <br>Experience in building applications with Java and object-oriented programming.
-      <br> Experience: 1 year.</p>
+      <div class="img-info">
+          <img src="../images/java-script.jpg" alt="JavaScript logo">
+          <div class="skill-info">
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%;"></div>
+            </div>
+            <p> <strong>JavaScript: 70%</strong></p>
+            <p>Familiar with modern JavaScript features and frameworks.<br>Experience: 6 months.</p>
+          </div>
+      </div>
+
+      <div class="img-info">
+          <img src="../images/java.jpg" alt="Java logo">
+          <div class="skill-info">
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+            <p> <strong>Java: 75%</strong></p>
+            <p>Experience in building applications with Java and object-oriented programming.<br>Experience: 1 year.</p>
+          </div>
+      </div>
+    </div>
   </div>
 
   <footer>
     <p>&copy; 2024 Hawi Mekonnen. All rights reserved.</p>
   </footer>
-
+  <script src="../js/burger.js"></script>
 </body>
 </html>
