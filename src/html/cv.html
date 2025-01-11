@@ -3,62 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV page</title>
-  
+    <title>CV</title>
+    <link rel="stylesheet" href="../css/cv.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
 </head>
 <body>
-  <header>
-    <h1>CV</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="cv.html">CV</a>
-      <a href="project.html">Project</a>
-      <a href="skill.html">Skill</a>
-    </nav>
-  </header>
-  <section>
-    <h2>
-      Educational Background
-    </h2>
-    <p>
-      I am currently pursuing a Bachelor of Science
-      degree in Software Engineering at Addis Ababa University.
-      My studies focus on developing strong programming skills.
-      <br>
-      Here are the certificates I have obtained so far.
-    </p>
-    <div>
-      <button>&lt;</button>
-      <img src="images/result-3.jpg" alt="">
-      <img src="images/result-4.jpg" alt="">
-      <img src="images/result-1.jpg" alt="">
-      <img src="images/result-2.jpg" alt="">
-      <button>&gt;</button>
-    </div>
-  </section>
-  <aside>
-    <h2>Certificates Overview</h2>
-    <p>My certifications demonstrate my commitment to continuous learning and skill development across multiple programming languages, particularly Java and Python.</p>
-    <h3>Java Programming Certificate</h3>
-    <p>Completed an extensive Java programming course, equipping me with the skills to build robust applications and solve complex problems efficiently.</p>
-    <h3>Python Programming Certificate</h3>
-    <p>Successfully finished a Python course, giving me a strong foundation in data analysis, automation, and machine learning concepts.</p>
-   </aside>
+    <header class="header">
+        <h1 class="cv">CV</h1>
+        <nav id="nav" class="nav-hidden">
+          <ul class="sidebar">
+            <li><a href="/index.html" class="header">Home</a></li>
+            <li><a href="./about.html" class="header">About Me</a></li>
+            <li><a href="./cv.html" class="header-active">CV</a></li>
+            <li><a href="./project.html" class="header">Project</a></li>
+            <li><a href="./skill.html" class="header">Skill</a></li>
+          </ul>
+    
+          <ul>
+            <li class="hideOnMobile"><a href="/index.html" class="header">Home</a></li>
+            <li class="hideOnMobile"><a href="./about.html" class="header">About Me</a></li>
+            <li class="hideOnMobile"><a href="./cv.html" class="header-active">CV</a></li>
+            <li class="hideOnMobile"><a href="./project.html" class="header">Project</a></li>
+            <li class="hideOnMobile"><a href="./skill.html" class="header">Skill</a></li>
+            <li class="burger" onclick="showSidebar()"> &#9776;</li>
+          </ul>
+                
+        </nav>
+      </header>
+  <div class="middle">
+    <section>
+        <h2>EDUCATIONAL BACKGROUND</h2>
+        <p>
+            I am currently pursuing a Bachelor of Science
+            degree in Software Engineering at Addis Ababa University.
+            My studies focus on developing strong programming skills.
+        </p>
+        <p>
+            Here are the certificates I have obtained so far.
+        </p>
+        <div class="image">
+            <button id="prev">&lt;</button>
+            <img id="certificateImage" src="../images/result-3.jpg" alt="">
+            <button id="next">&gt;</button>
+        </div>
+    </section>
+    <div class="aside">
+      <aside>
+          <h3>Certificates Overview</h3>
+          <p>My certifications demonstrate my commitment to continuous learning and skill development across multiple programming languages, particularly Java and Python.</p>
+          <h4>Java Programming Certificate</h4>
+          <p>Completed an extensive Java programming course, equipping me with the skills to build robust applications and solve complex problems efficiently.</p>
+          <h4>Python Programming Certificate</h4>
+          <p>Successfully finished a Python course, giving me a strong foundation in data analysis, automation, and machine learning concepts.</p>
+      </aside>
 
-<aside>
-    <h2>Performance Highlights</h2>
-    <ul>
-        <li>Developed strong analytical and problem-solving skills through rigorous coursework and practical projects.</li>
-        <li>Engaged in collaborative projects that helped refine my teamwork and communication abilities.</li>
-        <li>Regularly sought feedback from instructors and peers, leading to significant improvements in my coding practices.</li>
-        <li>Contributed to open-source projects, showcasing my ability to work in diverse coding environments.</li>
-        <li>Participated in coding competitions, enhancing my competitive programming skills and achieving recognition.</li>
-    </ul>
-</aside>
+      <aside>
+          <h3>Performance Highlights</h3>
+          <ul>
+              <li>Developed strong analytical and problem-solving skills through rigorous coursework and practical projects.</li>
+              <li>Engaged in collaborative projects that helped refine my teamwork and communication abilities.</li>
+              <li>Regularly sought feedback from instructors and peers, leading to significant improvements in my coding practices.</li>
+              <li>Contributed to open-source projects, showcasing my ability to work in diverse coding environments.</li>
+              <li>Participated in coding competitions, enhancing my competitive programming skills and achieving recognition.</li>
+          </ul>
+      </aside>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2024 Hawi Mekonnen. All rights reserved.</p>
   </footer>
+  <script src="../js/cv.js"></script>
+  <script src="../js/burger.js"></script>
 </body>
 </html>
