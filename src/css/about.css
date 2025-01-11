@@ -3,7 +3,7 @@
       padding: 0px;
       margin: 0px;
     }
-    
+
     p{
       font-size: 11px;
     }
@@ -120,7 +120,7 @@
   
     }
   }
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     body, * {
       padding: 0px;
       margin: 0px;
@@ -231,7 +231,7 @@
     }
     
   }  
-  @media screen and (min-width:481px) and (max-width: 932px) and (orientation:  Landscape) { 
+@media screen and (min-width:481px) and (max-width: 932px) and (orientation:  Landscape) { 
     body, *{
       padding: 0px;
       margin: 0px;
@@ -340,7 +340,7 @@
    
    
   }
-  @media screen and (min-width: 481px) and (max-width: 1024px) and (orientation:  portrait) {
+@media screen and (min-width: 481px) and (max-width: 1024px) and (orientation:  portrait) {
     body, *{
       padding: 0px;
       margin: 0px;
@@ -450,7 +450,7 @@
     }
    
   }
-  @media screen and (min-width: 769px)  and (max-width: 1024px) and (orientation:  Landscape){
+@media screen and (min-width: 769px)  and (max-width: 1024px) and (orientation:  Landscape){
     body, *{
       padding: 0px;
       margin: 0px;
