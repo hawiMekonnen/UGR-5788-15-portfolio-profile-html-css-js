@@ -148,6 +148,9 @@
       font-size: 12px;
       margin-left: .625em ;
     }
+    ul{
+      list-style-type: none;
+    }
     .aside p, .aside ul{
       color: white;
       font-size: 10px;
@@ -225,6 +228,9 @@
       color: white;
       font-size: 12px;
       margin-left: .625em ;
+    }
+    ul{
+      list-style-type: none;
     }
     .aside p, .aside ul{
       color: white;

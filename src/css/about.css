@@ -106,7 +106,7 @@
       width: 30px;
       height: 410px;
       background-color: #2C4065;
-      position: fixed;
+      position: absolute;
     }
   
     .left-rectangle {

@@ -30,19 +30,19 @@
     align-items: center;
     color: #2C4065;
   }
-  nav a.header-active[href="home.html"]{
+  nav a.header-active[href="index.html"]{
     color:  #0059FF;
   }
-  nav a.header-active[href="about.html"]{
+  nav a.header-active[href="./about.html"]{
     color:  #0059FF;
   }
-  nav a.header-active[href="cv.html"]{
+  nav a.header-active[href="./cv.html"]{
     color:  #0059FF;
   }
-  nav a.header-active[href="project.html"]{
+  nav a.header-active[href="./project.html"]{
     color:  #0059FF;
   }
-  nav a.header-active[href="skill.html"]{
+  nav a.header-active[href="./skill.html"]{
     color:  #0059FF;
   }
   
